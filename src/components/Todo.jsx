@@ -10,7 +10,7 @@ const Todo = props => {
   const { id } = props;
   // handle delete:
   const handleDelete = id => {
-    alert(id);
+    props.onRemoveTodo(id);
   };
   return (
     <div className="d-flex">
